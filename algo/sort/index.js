@@ -1,7 +1,8 @@
-import { create as _create } from "../utils.js"
+import { create as _create } from "../../utils.js"
 import quicksort from "./quicksort.js";
 import quickSortInPlace from "./quickSortInPlace.js";
 import bubbleSort from "./bubbleSort.js"
+import heapSort from "./heapSort.js";
 
 const originArray = [1,4,6,1,22,89,2,15,36,567,5,11,1];
 const template = `
@@ -18,6 +19,9 @@ const template = `
     </p>
     <p>
       quicksortInPlace: ${JSON.stringify(quickSortInPlace(originArray))}
+    </p>
+    <p>
+    heapSort: ${JSON.stringify(heapSort(originArray))}
     </p>
   </div>
 `;
